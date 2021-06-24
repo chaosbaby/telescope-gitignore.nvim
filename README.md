@@ -1,16 +1,15 @@
+## relation 
+Integration with github/gitignore
+
 ## main use
-
-1. In vim cmd mode: 
-2. Telescope gitignore 
-
-[##](##) setting ##
-1. - [X]  generate .gitignore file from local @finish(2021-06-25 00:05)
-2. - [C]  generate .gitignore file with request @cancel(2021-06-25 00:05)
-
-```vim
-let g:GitignoreGen = local|request
+In vim cmd mode: 
+```
+Telescope gitignore 
 ```
 
+[##](##) steps ##
+1. - [X]  generate .gitignore file from local @finish(2021-06-25 00:05)
+2. - [C]  generate .gitignore file with request @cancel(2021-06-25 00:05)
 
 ## telescope Actions
 1. - [X]  actions default: if no .gitignore ,write to .gitignore in cur directory, @finish(2021-06-25 00:06)
