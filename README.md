@@ -13,8 +13,11 @@ Telescope gitignore
 
 ## telescope Actions
 1. - [X]  actions default: if no .gitignore ,write to .gitignore in cur directory, @finish(2021-06-25 00:06)
-2. - [ ]  actions default: if has .gitignore file, add content to .gitignore file @init(2021-06-25 00:00)
-3. - [ ]  extra action: add_to_cur_buffer @init(2021-06-25 00:00)
+2. - [X]  actions default: if has .gitignore file, add content to .gitignore file @finish(2021-06-25 01:21)
+3. - [X]  actions default：give out choices : append|replace , 
+4. - [X]  actions default：go to .gitingore file when action finish 
+   
+5. - [ ]  extra action: add_to_cur_buffer @init(2021-06-25 00:00)
 
 
 ## target
