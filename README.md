@@ -28,11 +28,16 @@ Vim command to generate .gitignore file to repository
 
 * :neovim:       5.0(nightly)
 
-## install and start
+## installation
 
 vim-plug
 ``` vim-plug
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-gitignore.nvim'
 ```
+
+## Setup ##
+
+
+	require('telescope').load_extension('gitignore')
 
