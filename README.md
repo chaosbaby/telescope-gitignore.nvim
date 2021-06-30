@@ -34,7 +34,7 @@ Integration with github/gitignore
 vim-plug
 ``` vim-plug
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-gitignore.nvim'
+Plug 'chaosbaby/telescope-gitignore.nvim'
 ```
 
 ## Setup ##
