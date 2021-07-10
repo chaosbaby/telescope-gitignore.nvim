@@ -2,9 +2,10 @@ local actions = require("telescope.actions")
 local action_state = require("telescope.actions.state")
 
 local function checkIgnoreLocal()
-    local gitignoreDir = os.getenv('HOME') .. '/.vim'
-    local checkIgnoreFile = 'gitignore/Python.gitignore'
+    local gitignoreDir = os.getenv('HOME') .. '/.vim/gitignore'
+    local checkIgnoreFile = 'Python.gitignore'
     local checkFilePath = gitignoreDir .. "/" .. checkIgnoreFile
+    print(checkFilePath)
     local checkFile = io.open(checkFilePath)
     if checkFile == nil then
         os.execute("git clone https://github.com/github/gitignore.git" .. " " ..
@@ -45,16 +46,9 @@ local file_gitignore = function()
     require('telescope.builtin').find_files {
         prompt_title = ' telescope gitignoreLocal',
         shorten_path = false,
-        cwd = '~/.vim/gitignore',
-        width = .25,
+        search_dirs = {'~/.vim/gitignore'},
         layout_strategy = 'horizontal',
-        layout_config = {preview_width = 0.65},
-        attach_mappings = function(_, map)
-            -- map('i', '<c-e>', addToGitignore)
-            -- actions.select_default:replace(
-            --     function(prompt_bufnr)
-            --         createGitignore(selection.path)
-            --     end)
+        attach_mappings = function(_, _)
             actions.select_default:replace(action_choices)
             return true
         end
